@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Sergi Falcon
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Sergi Falcón Xarau} \\ \vspace{8pt}
+    \small \raisebox{-0.1\height}\faPhone\ +34 633 611 241 ~ \href{mailto:sergifalcon93@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{sergifalcon93@gmail.com}} ~ 
+    \href{https://linkedin.com/in//sergifalcon}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/sergifalcon}}  ~
+    \href{https://github.com/falcode}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/falcode}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Porsche Digital}{Feb 2024 -- Present}
+      {Senior Full Stack Engineer}{Barcelona, Spain}
+      \resumeItemListStart
+        \resumeItem{Migrated \href{https://porsche.com}{\underline{www.porsche.com}} from an old stack using \textbf{AstroJS} and \textbf{VueJS}, focusing on front-end architecture and ensuring high performance across multiple regions.}
+        \resumeItem{Implemented and managed \textbf{visual testing}, \textbf{end-to-end (e2e) testing}, \textbf{smoke testing}, and \textbf{unit testing} utilizing \textbf{Playwright} to ensure robust quality assurance throughout the development lifecycle.}
+        \resumeItem{Oversaw \textbf{CI/CD pipelines} and \textbf{deployment processes} with \textbf{AWS} and \textbf{GitLab CI}, facilitating continuous deployment and \textbf{trunk-based development}.}
+        \resumeItem{Managed \textbf{CMS integration} using \textbf{Storyblok} and \textbf{NodeJS} for backend functionalities, ensuring seamless content updates across the site.}
+        \resumeItem{Collaborated with stakeholders from various global companies to serve localized content across \textbf{85+ countries}, ensuring daily updates were accurately reflected on the website.}
+      \resumeItemListEnd
+    \vspace{8pt}
+
+    \resumeSubheading
+      {Viaplay}{May 2023 -- Feb 2024}
+      {Full Stack Engineer}{Barcelona, Spain}
+      \resumeItemListStart
+        \resumeItem{Worked as a Senior Frontend Engineer at Viaplay, mainly focused on the Checkout and Payments team.}
+        \resumeItem{Used \textbf{React} and \textbf{Next.js} with \textbf{NX} for the monorepo setup, improving the shared components library.}
+        \resumeItem{Implemented E2E and smoke testing with \textbf{Cypress} in a project that had no prior testing setup.}
+        \resumeItem{Took care of backend updates and built new features using \textbf{PHP} and the \textbf{Yii framework}, making sure everything worked smoothly with the frontend.}
+    \resumeItemListEnd
+    \vspace{8pt}
+
+    \resumeSubheading
+      {Fever}{Sep 2022 -- May 2023}
+      {Engineering Manager}{Barcelona, Spain}
+      \resumeItemListStart
+        \resumeItem{Led a diverse team responsible for client site development and helped create and test internal tools to speed up project timelines.}
+        \resumeItem{Defined and ran all Scrum ceremonies while streamlining the Kanban system to improve workflow efficiency.}
+        \resumeItem{Played an active role in product development, addressing technical issues, and fostering a team environment that promoted ownership.}
+        \resumeItem{Held regular 1:1 meetings to discuss career paths, resolve conflicts, set expectations, and provide ongoing support to the team.}
+        \resumeItem{Used a data-driven approach to track progress toward sprint goals, OKRs, and addressed technical debt using metrics.}
+    \resumeItemListEnd
+    \vspace{8pt}
+
+
+    \resumeSubheading
+      {SEAT:CODE}{Jul 2020 -- Sep 2022}
+      {Team Lead \& Senior Frontend Engineer}{Barcelona, Spain}
+      \resumeItemListStart
+        \resumeItem{Combined the Senior Front-End Engineer role with Team Lead duties, leading a team of 9 developers.}
+        \resumeItem{Organized and led spikes to refine the Micro Front-End architecture using \textbf{Angular 13}, \textbf{Nx Monorepo}, and \textbf{SASS 7 to 1 pattern}, along with \textbf{TDD} using \textbf{Jest} \& \textbf{Spectator}.}
+        \resumeItem{Managed \textbf{GitHub Actions pipelines}, including \textbf{linters}, \textbf{unit test coverage}, \textbf{Sonarqube}, performance tools, and executed \textbf{E2E tests} with \textbf{Cypress} for major feature releases.}
+        \resumeItem{Led cross-team sessions, pair programming, and cross-feedback activities to improve collaboration.}
+        \resumeItem{Handled \textbf{1:1s} every two weeks, conducted performance reviews, salary discussions, and provided technical support to Product Owners and Managers. Organized sprint ceremonies like \textbf{refinement}, \textbf{retrospectives}, \textbf{planning}, \textbf{estimation}, and \textbf{reviews}. Managed conflict resolution, onboardings, mentoring, and followed \textbf{OKRs}.}
+    \resumeItemListEnd
+    \vspace{8pt}
+
+    \resumeSubheading
+      {Credimarket}{Jun 2019 -- Sep 2020}
+      {Frontend Engineer}{Barcelona, Spain}
+      \resumeItemListStart
+        \resumeItem{I joined the company to lead the Front-End architecture of a Customer Relationship Manager intern app with Angular 8 and Reactive Programming. I contributed to an Angular component libraries, published them via Verdaccio, prioritized performance, adopted serverless with Akita State Management, and leveraged Socket.io for enhanced capabilities.}
+    \resumeItemListEnd    
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Autonomous of Barcelona}{Sep. 2015 -- Apr 2019}
+      {Bachelor of Computer Science - Software Engineering}{Barcelona, Spain}
+    \resumeSubheading
+      {Higher Degree in Network System Administration}{Sep. 2013 -- Apr 2015}
+      {Institut Bernat el Ferrer - Vocational Education and Training (VET)}{Barcelona, Spain}
+    \resumeSubheading
+      {Microcomputer Networking Systems}{Sep. 2010 -- Apr 2012}
+      {Institut Bernat el Ferrer - Certificate of Higher Education (HNC)}{Barcelona, Spain}
+  \resumeSubHeadingListEnd
+ \vspace{8pt}
+
+%
+%-----------LANGS-----------
+\section{Languages}
+     \textbf{English}{: C1} \\
+     \textbf{Spanish}{: C2 (Native)} \\
+     \textbf{Catalan}{: C2 (Native)} \\
+ \vspace{8pt}
+
+%-----------INVOLVEMENT---------------
+\section{Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Co-founder, Refy}{Spring 2020 -- Present}{Co-founder}{Barcelona, Spain}
+            \resumeItemListStart
+                \resumeItem{Refy is a SaaS platform designed to help companies transition their recruitment process into a referral program, incentivizing employees and promoting employer branding. As co-founder, I co-developed the entire software solution alongside my partner, delivering it to multiple clients who continue to use it today. Refy allows companies to streamline their recruitment while compensating their workforce through referrals.}
+                \resumeItem{Product URL: \href{https://refyapp.com}{\underline{www.refyapp.com}}}
+                \resumeItem{Test the software: \href{https://porsche.com}{\underline{app.refyapp.com}}}
+            \resumeItemListEnd
+        \resumeSubheading{Viaplay Hackaton}{Dec 2023}{Winner (group of 3)}{Barcelona, Spain}
+            \resumeItemListStart
+                \resumeItem{Won a \href{https://www.linkedin.com/posts/sergifalcon_viaplaygroup-hackdays-innovation-activity-7137177587486797824-XEoG}{\underline{Hackaton}} for creating a feature that automatically translated all subtitles for every film on the platform using Lambdas and AWS, and notified users that the subtitles were AI-generated.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+\end{document}
